@@ -191,14 +191,17 @@ footer>.logo {
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 94px;   
+    margin-top: 94px;
 }
+
 .features-list .item {
     width: 270px;
 }
-.features-list .item:not(:last-child){
+
+.features-list .item:not(:last-child) {
     margin-right: 30px;
 }
+
 .features .title {
     font-weight: 700;
     font-size: 14px;
@@ -212,17 +215,20 @@ footer>.logo {
 }
 
 /* Work box */
-.section .work{
+.section .work {
     text-align: center;
 }
-.work-list{
+
+.work-list {
     margin-top: 50px;
     text-align: center;
 }
-.work-list .item{
+
+.work-list .item {
     display: inline-block;
 }
-.work-list .item:not(:last-child){
+
+.work-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
