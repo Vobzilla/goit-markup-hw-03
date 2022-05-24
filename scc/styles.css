@@ -6,6 +6,7 @@
 /* Вторичный цвет фона #2F303A; */
 /* Цвет фона team #F5F4FA */
 :root {
+    --indent-section: 94px;
     --indent-cards: 30px;
     --primery-text-color: #775755;
     --title-text-color: #212121;
@@ -78,20 +79,18 @@ ul {
 
 /* Logo */
 .web-logo {
-    color: var(--accent-color);
+    color: #000000;
 }
 
 .logo {
-    color: #000000;
+    color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
 
-footer>.logo {
-    color: var(--white-color);
-}
+
 
 /* Navigation */
 .page-header {
@@ -195,7 +194,7 @@ footer>.logo {
 .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 94px;
+    margin-top: var(--indent-section);
 }
 
 .features-list .item {
@@ -222,7 +221,7 @@ footer>.logo {
 /* Work box */
 .work .title {
     text-align: center;
-    margin-top: 94px;
+    margin-top: var(--indent-section);
     font-size: 36px;
     line-height: 1.17;
 }
@@ -242,17 +241,16 @@ footer>.logo {
 /* Team */
 .section .team {
     display: flex;
-    background-color: var(--bgc-team);
 }
 
 .team {
-    background-color: var(--white-color);
+    background-color: var(--bgc-team)
 }
 
 .team .title {
-    margin-top: 94px;
+    margin-top: var(--indent-section);
     justify-content: center;
-    padding-top: 94px;
+    padding-top: var(--indent-section);
     padding-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
@@ -262,10 +260,12 @@ footer>.logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: var(--indent-section);
 }
 
 .team .item {
     text-align: center;
+    background-color: var(--white-color);
 }
 
 .team .item:not(:last-child) {
@@ -273,7 +273,7 @@ footer>.logo {
 }
 
 .team-card {
-    padding-top: 30px;
+    padding-top: var(--indent-cards);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -282,7 +282,7 @@ footer>.logo {
 
 .team-text {
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: var(--indent-cards);
     font-size: 16px;
     line-height: 1.19;
 }
@@ -299,12 +299,37 @@ footer>.logo {
     font-family: Roboto, sans-serif;
 }
 
+.main-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--indent-section);
+}
+
+.main-portfolio .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .button-portfolio:hover,
 .button-portfolio:focus {
     background-color: var(--accent-color);
 }
 
 /* Project portfolio */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    margin-right: calc(-1 * var(--indent-cards));
+    margin-bottom: calc(-1 * var(--indent-cards));
+}
+
+.project .item {
+    flex-basis: calc(100/3)- var(--indent-cards);
+    margin-right: var(--indent-cards);
+    margin-bottom: var(--indent-cards);
+}
+
 .project-title {
     font-size: 18px;
     line-height: 2;
@@ -323,7 +348,19 @@ footer>.logo {
     background-color: var(--accent-bgc);
 }
 
+.footer .web-logo {
+    display: inline-block;
+    padding-top: 60px;
+    color: var(--white-color);
+}
+
+.footer-address {
+    padding-bottom: 60px;
+}
+
 .text-footer {
+    display: inline-block;
+    padding-top: 20px;
     color: var(--white-color);
     font-size: 14px;
     line-height: 1.71;
@@ -331,6 +368,8 @@ footer>.logo {
 }
 
 .contact-footer {
+    display: block;
+    padding-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
