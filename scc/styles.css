@@ -194,7 +194,7 @@ ul {
 
 /* Section Features */
 .section-featur {
-    padding: var(--indent-section);
+    padding: var(--indent-section) 0;
 }
 
 .features-list {
@@ -250,11 +250,11 @@ ul {
 .section-team {
     display: flex;
     flex-wrap: wrap;
+    padding: var(--indent-section) 0;
     background-color: var(--bgc-team)
 }
 
 .team.title {
-    padding-top: var(--indent-section);
     text-align: center;
     font-size: 36px;
     line-height: 1.16;
@@ -264,7 +264,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: var(--indent-section);
     margin-top: 50px;
 }
 
