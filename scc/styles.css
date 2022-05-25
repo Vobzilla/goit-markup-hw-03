@@ -94,9 +94,12 @@ ul {
 
 /* Navigation */
 .page-header {
+    border: 1px solid #ECECEC;
+}
+
+.page-header .conteiner {
     display: flex;
     align-items: center;
-
 }
 
 .main-nav {
@@ -266,6 +269,8 @@ ul {
 .team .item {
     text-align: center;
     background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team .item:not(:last-child) {
@@ -290,6 +295,7 @@ ul {
 
 /* Main portfolio */
 .button-portfolio {
+    padding:6px 22px;
     color: var(--title-text-color);
     background-color: var(--bgc-team);
     font-weight: 500;
@@ -297,6 +303,10 @@ ul {
     line-height: 1.62;
     cursor: pointer;
     font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
 .main-portfolio {
@@ -311,6 +321,7 @@ ul {
 
 .button-portfolio:hover,
 .button-portfolio:focus {
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
 
@@ -325,9 +336,15 @@ ul {
 }
 
 .project .item {
-    flex-basis: calc(100/3)- var(--indent-cards);
+    /* flex-basis: calc(100% / 3 - var(--indent-cards)); */
     margin-right: var(--indent-cards);
     margin-bottom: var(--indent-cards);
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-text {
+    margin: 20px 24px;
 }
 
 .project-title {
@@ -338,6 +355,7 @@ ul {
 }
 
 .project-text {
+    padding-top: 4px;
     color: var(--primery-text-color);
     font-size: 16px;
     line-height: 1.88;
@@ -345,6 +363,7 @@ ul {
 
 /* Footer */
 .footer {
+    margin-top: var(--indent-section);
     background-color: var(--accent-bgc);
 }
 
