@@ -295,7 +295,7 @@ ul {
 
 /* Main portfolio */
 .button-portfolio {
-    padding:6px 22px;
+    padding: 6px 22px;
     color: var(--title-text-color);
     background-color: var(--bgc-team);
     font-weight: 500;
@@ -330,6 +330,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding-bottom: var(--indent-section);
 
     margin-right: calc(-1 * var(--indent-cards));
     margin-bottom: calc(-1 * var(--indent-cards));
@@ -363,7 +364,6 @@ ul {
 
 /* Footer */
 .footer {
-    margin-top: var(--indent-section);
     background-color: var(--accent-bgc);
 }
 
