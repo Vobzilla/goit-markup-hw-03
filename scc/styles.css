@@ -155,8 +155,7 @@ ul {
 
 /* Hero */
 .hero {
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding: 200px 0;
     background-color: var(--accent-bgc);
     text-align: center;
 }
@@ -345,11 +344,11 @@ ul {
     flex-basis: calc(100% / 3 - var(--indent-cards));
     margin-right: var(--indent-cards);
     margin-bottom: var(--indent-cards);
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .card-text {
     padding: 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .project-title {
@@ -372,7 +371,7 @@ ul {
     background-color: var(--accent-bgc);
 }
 
-.footers .web-logo {
+.web-logo.footers {
     display: inline-block;
     color: var(--white-color);
 }
